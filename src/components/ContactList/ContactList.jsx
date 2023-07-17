@@ -15,7 +15,7 @@ const visibleContacts =getVisibleContacts(contacts, filter);
   const deletContact = (id) =>{
 dispatch(removeContact(id));
   }
-  console.log(filter)
+  console.log(visibleContacts)
   return (
     <List>
       {visibleContacts.map(({ id, name, number }) => (

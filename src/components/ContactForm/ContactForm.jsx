@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Notiflix from 'notiflix';
 import { addContact } from 'redux/contactSlice';
 
-export const ContactForm = ({ createUser }) => {
+export const ContactForm = () => {
   const dispatch = useDispatch();
 
   const contacts = useSelector(getContacts);
@@ -16,10 +16,9 @@ export const ContactForm = ({ createUser }) => {
     const form = event.target;
     const name = form.name.value;
     const number = form.number.value;
-    console.log(name);
-    console.log(number);
+    console.log(contacts)
 
-    if (contacts.find(contact => contact.name === name)) {
+    if (contacts?.find(contact => contact.name === name)) {
       Notiflix.Notify.failure(`${name} is already in your contacts`);
       return;
     } else {
