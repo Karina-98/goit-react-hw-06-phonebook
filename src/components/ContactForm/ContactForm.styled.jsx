@@ -31,8 +31,8 @@ padding: 10px;
   margin-bottom:15px;
   margin-left:10px;
   color: #333;
-  &:focus 
-    border-bottom: 2px solid #4CAF50;
+  &:focus {
+    border-bottom: 2px solid #4CAF50;}
 `
 
 export const ButtonAdd = styled.button`
@@ -43,5 +43,5 @@ padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
 
-&:hover 
-  background-color: #45a049;`
+&:hover {
+  background-color: #45a049;}`

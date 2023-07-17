@@ -19,8 +19,8 @@ padding: 5px 10px;
   cursor: pointer;
   margin-left: 15px;
 
-&:hover 
-  background-color: #45a049;
+&:hover {
+  background-color: #45a049;}
 `
 
 export const ContactItem = styled.li`
